@@ -1,0 +1,28 @@
+.sitebar_block{
+    min-height: 550px;
+    background-color: azure;
+    border-right: 2px solid darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.sitebar_block h1{
+    text-transform: lowercase;
+}
+.sitebar_block ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sitebar_block ul li{
+    list-style-type: none;
+}
+.sitebar_block ul li a{
+    text-decoration: none;
+    color: coral;
+}
+.sitebar_block ul li a:hover{
+    color: #5082ff;
+}

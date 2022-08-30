@@ -1,0 +1,16 @@
+.footer_block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background-color: #002480;
+}
+.footer_block h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.footer_active{
+    border: 2px solid coral;
+}

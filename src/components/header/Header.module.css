@@ -1,0 +1,13 @@
+.header_block{
+    width: 100%;
+    min-height: 200px;
+    background-color: green;
+}
+.header_block h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.header_active{
+    border: 2px solid coral;
+}

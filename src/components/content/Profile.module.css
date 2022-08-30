@@ -1,0 +1,9 @@
+.profile_block{
+    width: 100%;
+    min-height: 100%;
+    background-image: linear-gradient(to left top, #000, #fff );
+}
+.profile_block h1{
+    text-align: center;
+    color: coral;
+}
