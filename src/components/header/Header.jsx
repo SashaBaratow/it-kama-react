@@ -1,3 +1,4 @@
+import React from 'react';
 import headerStyles from './Header.module.css'
 const Header = ()=>{
     console.log(headerStyles)

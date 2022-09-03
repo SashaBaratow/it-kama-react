@@ -21,8 +21,11 @@
 }
 .sitebar_block ul li a{
     text-decoration: none;
-    color: coral;
+    color: #5082ff;
 }
 .sitebar_block ul li a:hover{
     color: #5082ff;
+}
+.sitebar_block ul li a.active{
+    color: coral;
 }

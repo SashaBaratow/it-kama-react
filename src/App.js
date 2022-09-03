@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Footer from "./components/footer/Footer";
 import MainSection from "./components/main/MainSection";
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className="App">
      <Header/>
-        <MainSection/>
+     <MainSection/>
      <Footer/>
     </div>
   );

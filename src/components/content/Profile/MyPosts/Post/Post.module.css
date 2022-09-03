@@ -1,0 +1,26 @@
+.posts__post{
+    width: 100%;
+    min-height: 50px;
+    background-color: burlywood;
+
+    padding: 0 20px;
+    border: 2px solid white;
+}
+.posts__post .content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.posts__post img{
+    max-width: 40px;
+    margin-right: 20px;
+}
+.posts__post a{
+    color: white;
+    text-decoration: none;
+}
+.posts__post a:hover{
+    text-decoration: none;
+    color: coral;
+}

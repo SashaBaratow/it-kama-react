@@ -1,0 +1,21 @@
+.profile_block{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+.profile_block .left{
+    flex: 1;
+}
+.profile_block .left img{
+    width: 100%;
+    object-fit: cover;
+}
+.profile_block .right {
+    flex: 7;
+}
+.profile_block .right h1.name{
+    text-align: left;
+}
+

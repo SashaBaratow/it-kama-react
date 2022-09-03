@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 100%;
     background-image: linear-gradient(to left top, #000, #fff );
+    padding: 20px 50px;
 }
 .profile_block h1{
     text-align: center;
