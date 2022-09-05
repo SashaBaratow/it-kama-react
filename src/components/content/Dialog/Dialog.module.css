@@ -46,6 +46,8 @@
     flex: 5;
     background-color: #91adfd;
     align-self: flex-start;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .messages .message__item {
@@ -53,4 +55,5 @@
     padding: 10px;
     border-radius: 10px;
     background-color: #d7e0ff;
+    margin-bottom: 20px;
 }

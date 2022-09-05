@@ -1,36 +1,37 @@
 import React from 'react';
 import stylesDialog from './Dialog.module.css'
-import {NavLink} from "react-router-dom";
+import DialogItem from "./DialogItem/DialogItem";
+import MessageItem from "./Message/MessageItem";
 
-const SingleDialog = (props) => {
-    let path = "/dialog/" + props.id
-    return(
-        <div className={stylesDialog.dialogs__item}>
-            <NavLink to={path} className={(navData) => (navData.isActive ? stylesDialog.active : 'none')} >{props.name}</NavLink>
-        </div>
-    )
-}
-const SingleMessage = (props) => {
-    return (
-        <article className={stylesDialog.message__item}>
-            {props.message}
-        </article>
-    )
-}
+
+
 const Dialog = () => {
+    let usersData = [
+        {id:1, name: 'Bob' },
+        {id:2, name: 'Fil' },
+        {id:3, name: 'Patrick' },
+        {id:4, name: 'John' },
+    ]
+    let dialogsData = [
+        {id: 1, massage: 'Hey!'},
+        {id: 2, massage: 'How are you?'},
+        {id: 3, massage: 'Are you here?'},
+        {id: 4, massage: 'Man!?'},
+    ]
+
+    let singleUserComponent = usersData.map(dialog => <DialogItem name = {dialog.name} id = {dialog.id} key={dialog.id}/> )
+    let singleDialogComponent = dialogsData.map((m)=>{
+        return <MessageItem  message = {m.massage} key={m.id} />
+    })
     return (
         <div className={stylesDialog.dialog__page}>
             <h1>this is Dialog Page</h1>
             <div className={stylesDialog.dialog}>
                 <div className={stylesDialog.dialogs__items}>
-                    <SingleDialog name = 'User 1' id = '1'/>
-                    <SingleDialog name = 'User 2' id = '2'/>
-                    <SingleDialog name = 'User 3' id = '3'/>
+                    {singleUserComponent}
                 </div>
                 <div className={stylesDialog.messages}>
-                    <SingleMessage  message = 'hi' />
-                    <SingleMessage  message = 'how are you?' />
-                    <SingleMessage  message = 'are you in Bishkek?' />
+                    {singleDialogComponent}
                 </div>
             </div>
         </div>
