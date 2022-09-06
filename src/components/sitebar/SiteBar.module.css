@@ -29,3 +29,31 @@
 .sitebar_block ul li a.active{
     color: coral;
 }
+.friends{
+    width: 100%;
+    position: relative;
+}
+.friends > div{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.friends .friend{
+    max-width: 40px;
+    max-height: 40px;
+    position: relative;
+    border-radius: 100%;
+    border: 2px solid #0ab60a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+.friends .friend > img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.friends .friend > span{
+    font-size: 12px;
+}

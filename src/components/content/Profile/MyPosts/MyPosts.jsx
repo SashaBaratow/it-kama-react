@@ -1,20 +1,18 @@
 import React from 'react';
 import stylesProfile from './MyPosts.module.css'
 import Post from "./Post/Post";
-function MyPosts(){
-
-    let posts = [
-        {id:1, message: 'it\'s my first Post', likeCount: 34},
-        {id:2, message: 'Hi My name is Bob Singer!', likeCount: 4},
-    ]
-     let postComponent = posts.map(p =>  <Post message ={p.message} likeCount = {p.likeCount} key={p.id}/>)
-
-
+function MyPosts(props){
+    let postComponent = props.postData.map(p => <Post message ={p.message} likeCount = {p.likeCount} key={p.id}/>)
+    let newText = React.createRef()
+    let addPost = ()=>{
+        let text = newText.current.value
+        alert(text)
+    }
     return(
        <div className={stylesProfile.my__posts}>
            <div className={stylesProfile.add__post}>
-               <textarea name="" id="" cols="30" rows="5"></textarea>
-               <button>Add post</button>
+               <textarea ref={newText} name="" id="" cols="30" rows="5"></textarea>
+               <button onClick={addPost}>Add post</button>
            </div>
            {postComponent}
        </div>
